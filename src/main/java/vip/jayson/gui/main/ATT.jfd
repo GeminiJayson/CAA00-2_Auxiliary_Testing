@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp toolBar1::l::618:x, comp splitPane1::l::618:x}"
+			"$verticalGroup": "par l {seq l {comp toolBar1:::p::p, space :::p, comp splitPane1::::458:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "toolBar1"
+				"rollover": true
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "setting"
+					"text": "修改配置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "settingActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "help"
+					"text": "帮助"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "helpActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"orientation": 0
+				"dividerLocation": 100
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+						name: "layeredPane1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 25, 10 )
+			"size": new java.awt.Dimension( 620, 530 )
+		} )
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <ATTConfig testPath="TestCase\CAA200-2" compareFile="CAA200_2 Output File Comparison File.xls"/>
+    <TestConfig configName="Config.TAB" codeDataName="ADSTF18.DAT">
+        <LKConfig ifGenerate="FALSE" configName="Config-LK.TAB" inputPath="LKInput" outputPath="LK-OUTPUT"/>
+        <TISConfig ifGenerate="FALSE"/>
+    </TestConfig>
+    <CAAConfig>
+        <IOAreaBlockOrder>OC,MMI,TCC4,RBC1,RBC2,RBC3,CBI3,KDAC,RBC4,FSFB2,OLC,CCFSFB2,CCSACEM,HLCI,HLVOBC</IOAreaBlockOrder>
+        <SingleStationVarAreaSegOrder>GSV,LSV,TSV,OC,MMI,TCC4,RBC1,RBC2,RBC3,CBI3,KDAC,RBC4,FSFB2,OLC,CCFSFB2,CCSACEM,HLCI,HLVOBC,LK</SingleStationVarAreaSegOrder>
+        <AssignNumberOrder>GPV,LPV,GSV,LSV,TSV,OC,MMI,TCC4,RBC1,RBC2,RBC3,CBI3,KDAC,RBC4,FSFB2,OLC,CCFSFB2,CCSACEM,HLCI,HLVOBC</AssignNumberOrder>
+        <AssignCodeOrder>GPV,LPV,GSV,LSV,TSV,OC,MMI,TCC4,RBC1,RBC2,RBC3,CBI3,KDAC,RBC4,FSFB2,OLC,CCFSFB2,CCSACEM,HLCI,HLVOBC</AssignCodeOrder>
+    </CAAConfig>
+    <CompareBIN excelPath="TestCase\CAA200_2 Output File Comparison File.xlsx" binFilePath="TestCase\CAA200-2\OUTPUT\CAA200-2Out">
+        <Mapping>
+            <Bin>3001.ADS</Bin>
+            <Excel>3001 ADS BIN</Excel>
+        </Mapping>
+    </CompareBIN>
+</Configuration>
